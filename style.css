@@ -24,8 +24,10 @@ max-width width width
       width: 100%;
       /* permet de garder toute la largeur du parent */
       flex: none;
+      
 
     }
     .carrousel_ecran figure {
-      /* enlève les marges par défaut */    
+      /* enlève les marges par défaut */ 
+      margin: 0;   
     }
