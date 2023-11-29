@@ -18,13 +18,17 @@ max-width width width
       display: flex;
       /* largeur du parent */
       width: 100%;
+      /*création d'un scroll horizontal*/
+      overflow-x: scroll;
+      /* creation d'un scroll fluide*/ 
+      scroll-behavior: smooth;
     }
     .carrousel_ecran {
       /* largeur du parent pour chaque enfant */
       width: 100%;
       /* permet de garder toute la largeur du parent */
       flex: none;
-      
+
 
     }
     .carrousel_ecran figure {
