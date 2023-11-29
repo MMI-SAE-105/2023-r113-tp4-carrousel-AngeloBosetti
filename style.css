@@ -22,12 +22,17 @@ max-width width width
       overflow-x: scroll;
       /* creation d'un scroll fluide*/ 
       scroll-behavior: smooth;
+      /* permet de scroller par blocs*/
+      scroll-snap-type: x mandatory;
+
     }
     .carrousel_ecran {
       /* largeur du parent pour chaque enfant */
       width: 100%;
       /* permet de garder toute la largeur du parent */
       flex: none;
+      /* aligne les enfants par blocs */
+        scroll-snap-align: start;
 
 
     }
