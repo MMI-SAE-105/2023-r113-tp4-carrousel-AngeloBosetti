@@ -7,11 +7,23 @@ max-width width width
     /* change le box model */
     box-sizing: border-box;
     }
+    h1,a{
+      display: flex;
+      justify-content: center;
+      color: #000;
+      font-family: 'Roboto', sans-serif;
+
+    }
     img {
       /* image responsive, largeur maxi */
       max-width: 100%;
       /* hauteur "auto" */
       height: auto;
+      border-radius: 5%;
+      border:xnone;
+    }
+    .carrousel{
+      background: #000;
     }
     .carrousel_parent-ecrans {
         /* aligne horizontalement les enfants */
@@ -33,19 +45,22 @@ max-width width width
       flex: none;
       /* aligne les enfants par blocs */
       scroll-snap-align: start;
-
+      
 
     }
     .carrousel_ecran figure {
       /* enlève les marges par défaut */ 
-      margin: 0;   
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    
     }
 
     .carrousel {
         position: relative;
-      }
+    }
       
-      .carrousel_btn {
+    .carrousel_btn {
         position: absolute;
         top: 50%;
         top: calc(min(500px, 100vw) / 16 * 9 / 2 + 1rem); 
@@ -54,26 +69,27 @@ max-width width width
         /* methode du point mort */
         width: 2rem;
         height: 2rem;
-        background: rgba(0,0,0,0.5);
-        border-radius: 50%;
+        background: rgba(125,125,125,0.5);
+        border-radius: 30%;
         border: none;
         display: grid;
         place-content: center;
         color: #fff;
-      }
+    }
       
-      .carrousel_btn-avant {
+    .carrousel_btn-avant {
         left: 0;
-      }
+    }
       
-      .carrousel_btn-apres {
+    .carrousel_btn-apres {
         right: 0;
-      }
+    }
       /* en vrac :
       0 0 1rem display center flex gap 
       justify-content list-style margin none padding
       */
-      .carroussel_liste-liens {
+    .carroussel_liste-liens {
+          background: white;
          /* aligne horizontalement les enfants */
           display: flex;
          /* centre horizontalement les enfants */
@@ -85,5 +101,14 @@ max-width width width
          /* enlève les puces par défaut */
           list-style: none;
          /* espace entre les enfants */
-          gap: 1rem;
-      }
+          gap: 5rem;
+          
+          font-size: 125%;
+          font-family: 'Roboto', sans-serif;
+    }
+    figcaption{
+      color: #fff;
+      font-size: 125%;
+      font-family: 'Roboto', sans-serif;
+    }
+    
